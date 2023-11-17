@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "codesphere-vitesse-dark",
+  "version": "1.0.0",
+  "description": "Vitesse-Dark-Soft Color Theme for Codesphere IDE",
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+        "matches": ["https://codesphere.com/ide/*"],
+        "css": ["style.css"]
+    }
+  ]
+}
